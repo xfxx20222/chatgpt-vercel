@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [solidJs(), tailwind(), react()],
   output: 'server',
   adapter: process.env.VERCEL
-     vercel({ analytics: true })
+ analytics: true,
     : node({ mode: 'standalone' }),
   vite: {
     plugins: [
